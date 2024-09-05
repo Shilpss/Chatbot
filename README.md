@@ -7,4 +7,3 @@ This is a simple menu based chatbot built using HTML, CSS, and JavaScript. This 
 **User-Friendly Interface**:  Simple and attractive interface where users can type or select the option.
 
 
-![image](https://github.com/user-attachments/assets/727a8a58-52d1-4637-adc4-dd61e9076e74)
