@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Based Chatbot</title>
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
+    
+
+    <!-- font awesome icon cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="box" >
+        <div class="child" id="chat-bot">
+        
+                <div class="header">
+                    <div class="h-left">
+                        <img src="images/ChatBot.jpeg" alt="Chatbot_Image" id="avatar">
+                        <div>
+                            <span class="name">Chatbot</span>
+                            <br>
+                            <span">My name is Chintu</span>
+                        </div>
+                    </div>
+                    <div class="h-right">
+                        <button type="button" id="refBtn" title="Refresh Chat" onclick=" ">
+                        <i class="fa fa-refresh"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="chat" id="chat-box">
+                    <div class="chatbot-msg" id="chat-l">
+                        <p> Hello👋 <br><br> Glad to help you!!!</p>
+                    </div>
+                </div>
+            
+
+                <div class="footer">
+                    <div class="f_ele">
+                        <input type="text" id="user-input" placeholder="Search here">
+                        <button type="button" class="SubBtn" id="send" title="Send" >
+                            <i class="fa fa-arrow-circle-right" ></i>
+                        </button>
+                    </div>
+                </div>
+
+        </div> 
+    </div>  
+    <div>
+        <img src="images/ChatImg.png" alt="Toggle Block" id="toggleImage" class="toggle-image">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
