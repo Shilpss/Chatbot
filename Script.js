@@ -20,6 +20,8 @@ const flowChart = {
             2: "Schools",
             3: "Hospitals",
             0: "Back",
+            4:"help",
+            5: "link",
             10:"test"
         }
     },
@@ -67,6 +69,12 @@ const flowChart = {
             0: "Back"
         }
     },
+    link:{
+        message: "You can visit this",
+        options: {
+            more: "https://en.wikipedia.org/wiki/Nature"
+        }
+    },
     Private: {
         message: "For which course",
         options: {
@@ -95,7 +103,8 @@ const flowChart = {
             3: "Vidya niketana",
             4: "Jain kannada",
             5: "Kls kannada ",
-            0: "Back"
+            0: "Back",
+            6 : "Thank you here ends my Service"
         }
     },
     help: {
@@ -119,6 +128,7 @@ const flowChart = {
         message: "You can reach us at 1-800-123-4567.",
         options: {}
     }
+
 };
 
 let parent = flowChart.start;
@@ -176,6 +186,7 @@ function startChat() {
         alert("Please enter a valid option.");
         return;
     }
+    
 
     if (input === "0") {
         if (history.length > 0) {
@@ -195,13 +206,12 @@ function startChat() {
                 // displayMessage(parent.message, parent.options);
                 if (parent.message) {
                     displayMessage(parent.message, parent.options);
-                } else {
+                }
+                 else {
                     // displayMessage("No more options available.", null);
                     endChat();
                 }
-                if (!parent.options || Object.keys(parent.options).length === 0) {
-                    endChat();
-                }
+                
             }
             
         } else {
